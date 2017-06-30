@@ -1,0 +1,90 @@
+
+.contentlist{
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+.list-group-item{
+	background:none;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	margin-bottom: 0.2rem;
+}
+.popover-title{
+	background: none;
+}
+.popover-title h2,h3{
+	color:#943E3E;
+	margin: 0 auto;
+}
+.popover-content{
+	text-align: left;
+}
+.popover-content h3{
+	color: #615E9E;
+}
+ ul {
+	margin: 0 auto;
+	padding-left:0.5rem;
+}
+ul li{
+	color: #1F838F;
+	font-size: 0.36rem; 
+}
+.startitle{
+	margin-left: 0.4rem;
+}
+/* ==============
+ * 绘制五角星
+ ==============*/
+.fivestar {  
+   margin: 0 0;  
+   position: relative; 
+   top:0.38rem; 
+   display: block;  
+   color: red;  
+   width: 0px;  
+   height: 0px;  
+   border-right:  0.2rem solid transparent;  
+   border-bottom: 0.14rem  solid red;  
+   border-left:   0.2rem solid transparent;  
+   -moz-transform:    rotate(35deg);  
+   -webkit-transform: rotate(35deg);  
+   -ms-transform:     rotate(35deg);  
+   -o-transform:      rotate(35deg);  
+}  
+.fivestar:before {  
+   border-bottom: 0.16rem solid red;  
+   border-left: 0.06rem solid transparent;  
+   border-right: 0.06rem solid transparent;  
+   position: absolute;  
+   height: 0;  
+   width: 0;  
+   top: -0.12rem;  
+   left: -0.11rem;  
+   display: block;  
+   content: "";  
+   -webkit-transform: rotate(-35deg);  
+   -moz-transform:    rotate(-35deg);  
+   -ms-transform:     rotate(-35deg);  
+   -o-transform:      rotate(-35deg);  
+  
+}  
+.fivestar:after {  
+   position: absolute;  
+   display: block;  
+   color: red;  
+   top: 0.006rem;  
+   left: -0.21rem;  
+   width: 0px;  
+   height: 0px;  
+   border-right: 0.2rem solid transparent;  
+   border-bottom: 0.14rem solid red;  
+   border-left: 0.2rem solid transparent;  
+   -webkit-transform: rotate(-70deg);  
+   -moz-transform:    rotate(-70deg);  
+   -ms-transform:     rotate(-70deg);  
+   -o-transform:      rotate(-70deg);  
+   content: "";  
+}  

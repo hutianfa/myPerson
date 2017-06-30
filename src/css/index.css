@@ -1,0 +1,270 @@
+
+.container{
+  width:100%;
+  margin:0 auto;
+  padding:0;
+}
+nav{
+  margin:0 auto;
+  padding:0;
+  display: inline-flex;
+  display: -webkit-inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:flex-start;
+  align-items: center;
+  padding-left: 0.2rem;
+  width: 100%;
+}
+
+nav .conview{
+  width:50%;
+  height: 4.4rem;
+  position: relative;
+}
+nav .conview:after{
+   -webkit-animation: twinkling 3s 1s ease-in-out;
+}
+@-webkit-keyframes twinkling{  
+    0%{  
+        opacity: 0.5;  
+        transform: scale(0.5);
+    }  
+    100%{  
+        opacity: 1; 
+        transform: scale(1); 
+    }  
+}  
+@keyframes twinkling{  
+    0%{  
+        opacity: 0.5;  
+        transform: scale(0.5);
+    }  
+    100%{  
+        opacity: 1;  
+        transform: scale(1);
+    }  
+}  
+.hex {
+    width:3rem;
+    height:1.72rem;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;            
+    background-size: auto 3.46;                            
+    position: absolute;
+    /* left:1.82rem; */
+    top: 0.3rem;
+    margin:0.5rem 0.1rem;
+    text-align:center;
+    zoom:1;
+}
+.conview:nth-child(1) .hex{
+  z-index: 1;
+  background-color:#fff;
+  left: 40%;
+}
+.conview:nth-child(2) .hex{
+  background-color: #e8961d;
+  right: 40%;
+}
+.conview:nth-child(3) .hex{
+  background-color:#CB89E9;
+  left: 40%;
+}
+.conview:nth-child(4) .hex{
+  background-color:#F0B6A7;
+  right: 40%;
+}
+.conview:nth-child(4) .hex .corner-2{
+  z-index: 2;
+}
+.hex .corner-1,
+    .hex .corner-2 {
+        position: absolute;
+        top: 0;
+        left:0;
+        width:100%;
+        height:100%;
+        background: inherit;                                
+        z-index:-2;                        
+        overflow:hidden;        
+        backface-visibility: hidden;            
+    }
+    
+    .hex .corner-1 {
+        z-index:-1;
+        transform: rotate(60deg);
+    }
+    
+    .hex .corner-2 {
+        transform: rotate(-60deg);
+    }
+    
+ .hex .corner-1:before,
+    .hex .corner-2:before {
+      width:3.8rem;
+      height:3.8rem;
+      content: '';
+      position: absolute;
+      background: inherit;
+      top:0;
+      left: 0;
+      z-index: 1;
+      background: inherit;
+      background-repeat:no-repeat;
+      backface-visibility: hidden;                
+    }            
+    .hex .corner-1:before {
+        transform: rotate(-60deg) translate(-1.74rem, 0px);    
+      transform-origin: 0 0;
+      background: #74cddb;
+    }            
+    
+    .hex .corner-2:before {
+        transform: rotate(60deg) translate(-0.96rem, -0.22rem);    
+        bottom:0;
+        background: #f5c53c;
+    }   
+nav .conview  .nav-text{    
+    font-size: 0.42rem;
+    position: relative;
+    z-index: 1111;
+    text-align: center;
+}
+.conview:nth-child(1) .nav-text{
+   line-height: 1.2rem;
+   transform: rotate(60deg) translate(0.3rem, -0.2rem);
+}
+.conview:nth-child(1) .ntext{
+   transform: rotate(60deg) translate(-0.7rem, -0.2rem);
+}
+.conview:nth-child(2) .nav-text,.conview:nth-child(3) .nav-text{
+   top:0.3rem;
+}
+.conview:nth-child(4) .nav-text{
+   line-height: 1.2rem;
+   transform: rotate(-60deg) translate(-0.2rem, -0.2rem);
+}
+.conview:nth-child(4) .ntext{
+   transform: rotate(-60deg) translate(0.8rem, -0.2rem);
+}
+nav .cont{
+  width: 98%;
+  height: auto;
+  text-align: center;
+}
+.user-phone{
+    font-size: 0.48rem;
+    text-shadow: 0.02rem 0.04rem #22c3aa,0.04rem 0.06rem #aee2d9;
+    color: #8a451e;
+}
+.user-age{
+    margin: 1em 0 0.03rem 0;
+    color: #305156;
+    font-size: 0.42rem;
+}
+.user-address{
+    color: #008a75;
+    text-decoration: none;
+    transition: 0.5s;
+    font-size: 0.36rem;
+}
+
+/*画像颜色*/
+.orange .circle,.orange .circle-03{
+  background-image:-webkit-linear-gradient(132deg, #fefbf5, #e8961d);
+  background-image:linear-gradient(132deg,#fefbf5,#e8961d);
+}
+.orange .circle-02{
+  background-image:-webkit-linear-gradient(132deg, #e8961d, #fefbf5);
+  background-image:linear-gradient(132deg,#e8961d,#fefbf5);
+}
+.orange .nav-text{
+  background-color:#e8961d;
+}
+.orange .nav-text:after{
+  border-left-color:#eca946;
+  border-right-color:#e8961d;
+}
+
+/*-深红色-*/
+.russetish .circle,.russetish .circle-03{
+  background-image:-webkit-linear-gradient(132deg, #fdfaf9, #cc6448);
+  background-image:linear-gradient(132deg,#fdfaf9,#cc6448);
+}
+.russetish .circle-02{
+  background-image:-webkit-linear-gradient(132deg, #cc6448, #fdfaf9);
+  background-image:linear-gradient(132deg,#cc6448,#fdfaf9);
+}
+.russetish .nav-text{
+  background-color:#cc6448;
+}
+.russetish .nav-text:after{
+  border-left-color:#d58069;
+  border-right-color:#cc6448;
+}
+/*-淡绿-*/
+.green .circle,.green .circle-03{
+  background-image:-webkit-linear-gradient(132deg, #fcfdfa, #98b757);
+  background-image:linear-gradient(132deg,#fcfdfa,#98b757);
+}
+.green .circle-02{
+  background-image:-webkit-linear-gradient(132deg, #98b757, #fcfdfa);
+  background-image:linear-gradient(132deg,#98b757,#fcfdfa);
+}
+.green .nav-text{
+  background-color:#98b757;
+}
+.green .nav-text:after{
+  border-left-color:#abc475;
+  border-right-color:#98b757;
+}
+/*-淡蓝-*/
+.blue .circle,.blue .circle-03{
+  background-image:-webkit-linear-gradient(132deg, #f7fcfd, #2baecb);
+  background-image:linear-gradient(132deg,#f7fcfd,#2baecb);
+}
+.blue .circle-02{
+  background-image:-webkit-linear-gradient(132deg, #2baecb, #f7fcfd);
+  background-image:linear-gradient(132deg,#2baecb,#f7fcfd);
+}
+.blue .nav-text{
+  background-color:#2baecb;
+}
+.blue .nav-text:after{
+  border-left-color:#51bdd4;
+  border-right-color:#2baecb;
+}
+/*-淡紫色-*/
+.purple .circle,.purple .circle-03{
+  background-image:-webkit-linear-gradient(132deg, #fdfcfd, #c285b8);
+  background-image:linear-gradient(132deg,#fdfcfd,#c285b8);
+}
+.purple .circle-02{
+  background-image:-webkit-linear-gradient(132deg, #c285b8, #fdfcfd);
+  background-image:linear-gradient(132deg,#c285b8,#fdfcfd);
+}
+.purple .nav-text{
+  background-color:#c285b8;
+}
+.purple .nav-text:after{
+  border-left-color:#cd9bc5;
+  border-right-color:#c285b8;
+}
+/*-淡棕色-*/
+.brown .circle,.brown .circle-03{
+  background-image:-webkit-linear-gradient(132deg, #fcfcfa, #b7a083);
+  background-image:linear-gradient(132deg,#fcfcfa,#b7a083);
+}
+.brown .circle-02{
+  background-image:-webkit-linear-gradient(132deg, #b7a083, #fcfcfa);
+  background-image:linear-gradient(132deg,#b7a083,#fcfcfa);
+}
+.brown .nav-text{
+  background-color:#b7a083;
+}
+.brown .nav-text:after{
+  border-left-color:#c4b199;
+  border-right-color:#b7a083;
+}
+

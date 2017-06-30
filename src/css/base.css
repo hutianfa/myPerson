@@ -1,0 +1,88 @@
+html{
+  font-size:40px;
+}
+body{
+   font-family: "微软雅黑";
+   webkit-text-size-adjust: none;
+   transition: 0.5s;
+   margin: 0 auto;
+   padding:0;
+}
+#wrapper{
+   background-color: rgba(34,195,170,0.6);
+   min-height: 26.6rem;
+}
+.panel-title img{
+   margin:0 auto;
+   text-align: center;
+}
+.img-thumbnail{
+ display: block;
+}
+.panel-title h1{
+  text-align: center;
+  font-size: 0.96rem;
+  text-shadow: 0.02rem 0.04rem #22c3aa,0.04rem 0.06rem #aee2d9;
+  color: #ffffff;
+}
+.container-fluid{
+	width:96%;
+	margin: 0 auto;
+}
+.container-fluid h1{
+	text-align: center;
+	color:#fff;  
+	font-size: 0.42rem;
+}
+.confoot{
+  width: 100%;
+  height: 1.5rem;
+  background: -moz-linear-gradient(top, #65bbce, #50b1c8);
+  background: -webkit-linear-gradient(top, #65bbce, #50b1c8);
+  background: -ms-linear-gradient(top, #65bbce, #50b1c8);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#65bbce', endColorstr='#50b1c8', GradientType='0');
+  border-bottom: 0.02rem solid #348da7;
+  color: #fff;
+  text-align: center;
+}  
+.confoot abbr{
+    line-height: 1.5rem;
+    font-size: 0.46rem;
+}
+/*按钮主体*/  
+.confoot span {  
+    color: #fff; 
+    line-height: 1.3rem;
+    margin-top: 0.1rem;
+    display: inline-block;       
+    padding:  0 0.3rem 0 0.2rem;  
+    background: -moz-linear-gradient(top, #5bbfd8, #449fb6);   
+    background: -webkit-linear-gradient(top, #5bbfd8, #449fb6);   
+    border: 0.02rem solid #2c96b2;     
+    border-radius: 0.04rem 0.1rem 0.1rem 0.04rem;   
+    text-shadow: 0 -0.02rem 0 rgba(0, 0, 0, .4);     
+    margin-left: 0.24rem;   
+    position: absolute;
+    left: 0.1rem;   
+    z-index: 2;   
+    font-size: 0.42rem;
+    box-shadow: 0 0.02rem 0 rgba(255, 255, 255, .3) inset, 0.02rem 0.02rem 0.02rem rgba(255, 255, 255, .2);
+}   
+/*左边的小三角*/  
+.confoot span:before{   
+    content: '';   
+    display: inline-block;   
+    width: 0.95rem;   
+    height: 0.94rem;   
+    background: -moz-linear-gradient(-45deg, #5bbfd8, #449fb6);/*背景旋转-45°*/  
+    background: -webkit-linear-gradient(-45deg, #5bbfd8, #449fb6);      
+    -webkit-transform-origin: 0 0;/*设置基点为0,0*/  
+    -moz-transform-origin: 0 0;   
+    -webkit-transform: scaleX(0.8) rotate(45deg);/*X轴压缩，旋转45°*/  
+    -moz-transform: scaleX(0.8) rotate(45deg);   
+    border-radius: 0.06rem 0.04rem;     
+    position: absolute;   
+    left: 0.02rem;   
+    top: -0.03rem;   
+    z-index: -1; 
+}  

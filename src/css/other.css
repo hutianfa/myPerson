@@ -1,0 +1,44 @@
+.morecon{
+	width: 98%;
+	height: auto;
+	margin:0 auto;	
+}
+.morecon h2{
+	width: 2rem;
+	height: 1rem;
+	position: relative;
+	border-top-left-radius:0.25rem;
+	border-bottom-left-radius: 0.4rem;
+	border-top-right-radius: 0.4rem;
+	background: #8D2BCC;
+	text-align: center;
+}
+.morecon h2:after{
+	content: '';
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.morecon h2 span{
+	color: #fff;
+	font-size:0.36rem;
+}
+.morecon:nth-child(3) ul li a{
+	text-decoration: none;
+	font-size: 0.46rem;
+}
+.tabcon{	
+	height: 100%;
+	position: relative;
+}
+.tabcon  ul {
+	margin: 0 auto;
+	padding-left:1.4rem;
+	font-size: 0.42rem;
+}
+.tabcon ul li{
+   color:#4B30F0; 
+}
+.tabcon ul li a{
+	color: #945957;
+}

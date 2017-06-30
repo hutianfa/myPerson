@@ -1,0 +1,101 @@
+.top{
+  height: auto;
+  margin:0.5rem 0.2rem; 
+  padding:0 0.25rem 0 0.25rem;
+  width: 100%;
+}
+.midenghit{
+	width: 94%;
+	height: auto;
+	margin:0 auto;
+}
+.media-list{
+	width: 80%;
+	margin:0 auto;
+	height: 100%; 
+	text-align: center;
+}
+.media-list h2{
+	color: #fff;
+	text-shadow: 0rem 0.05rem 0 #E4F1FF;
+	font: 0.46rem "微软雅黑";
+}
+.center-block{
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+.modal-title{
+   width:94%;
+   border-radius: 0.1rem;
+   border:0.02rem solid #FFFFFF;
+   -moz-border-radius:0.1rem;
+　 -webkit-border-radius:0.1rem;
+   margin:0 auto;
+}
+.modal-title h2{
+   color: #fff;
+   margin:0rem 0rem 0rem 0.4rem;
+   font-size: 0.46rem; 
+   line-height: 0.8rem; 
+   font-family: "微软雅黑";
+   text-shadow: 0.02rem 0.04rem 0 #22c3aa ;
+}
+.control-label{
+	width: 100%;
+	height: auto;
+}
+.progressbar-title{
+	color: #fff;
+	font-size: 0.42rem;
+}
+.container-fluid:after{
+	content: '';
+	-webkit-animation: showIn 5s ease;
+}
+.voctabcon{
+	width:49.5%;
+	float: left;
+	padding:0 0.5rem 0 0.5rem;
+}
+.container-fluid .tab-content{
+	-webkit-transition: all 0.5s;
+	-webkit-animation: showIn ease;
+}
+.container-fluid .tab-content:nth-child(1) {
+	-webkit-animation-duration:0.5s;
+}
+.container-fluid .tab-content:nth-child(2) {
+	-webkit-animation-duration:1s;
+}
+.container-fluid .tab-content:nth-child(3) {
+	-webkit-animation-duration:1.5s;
+}
+.container-fluid .tab-content:nth-child(4) {
+	-webkit-animation-duration:2s;
+}
+.container-fluid .tab-content:nth-child(5) {
+	-webkit-animation-duration:2.5s;
+}
+.container-fluid .tab-content:nth-child(6) {
+	-webkit-animation-duration:3s;
+}
+.container-fluid .tab-content:nth-child(7) {
+	-webkit-animation-duration:3.5s;
+}
+.container-fluid .tab-content:nth-child(8) {
+	-webkit-animation-duration:4s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
